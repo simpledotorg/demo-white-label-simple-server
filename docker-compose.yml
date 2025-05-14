@@ -1,0 +1,7 @@
+services:
+    white-label-simple:
+        image: simpledotorg/white-label-simple
+        build:
+            context: .
+            dockerfile: ./simple.wl.docker
+

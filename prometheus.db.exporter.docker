@@ -1,0 +1,12 @@
+from simpledotorg/server:4166902bcea324c61dbbbb97f09b385dcd44a0b3
+
+ARG PROJECT_VERSION
+
+#
+# Files and Folders
+#
+COPY app /tmp/delta
+RUN cp -R /tmp/delta/* /home/app/app/ && rm -Rf /tmp/delta
+
+CMD sleep 3600s
+
